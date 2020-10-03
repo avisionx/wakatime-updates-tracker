@@ -1,0 +1,24 @@
+name: Python application
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *' # every 3 days in a month
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies ✔
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Generate data from email 🎉
+      run: python main.py
+    - name: Save generated data ✨ 
+      run: |
+        cat data.json
