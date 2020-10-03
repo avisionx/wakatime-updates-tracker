@@ -8,8 +8,6 @@
     This repository stores and compiles WakaTime Languages and Projects data from emails and saves the stats ✨
     </br>
     <a href="https://github.com/avisionx/wakatime-updates-tracker/#table-of-contents"><strong>Explore the docs »</strong></a><br/>
-    <a href="https://avisionx.github.io/wakatime-updates-tracker">Website</a>
-    .
     <a href="https://github.com/avisionx/wakatime-updates-tracker/issues">Report Bug</a>
     .
     <a href="https://github.com/avisionx/wakatime-updates-tracker/issues">Request Feature</a>
