@@ -25,4 +25,9 @@ jobs:
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
     - name: Save generated data ✨ 
       run: |
-        cat data.json
+        git status
+        git add data.json
+        git commit -m "update wakatime 📊"
+        git push
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
