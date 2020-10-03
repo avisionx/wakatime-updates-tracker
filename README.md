@@ -60,8 +60,12 @@ $ pip install -r requirements.txt
 ```
 3. Setup an email id on gmail with all the wakatime update emails they look like as shown below, and add label of `wakatime` to all of them.
 ![WakaTimeEmailSS](https://user-images.githubusercontent.com/32339251/94999781-51011680-05d9-11eb-8ae2-126f2dbf7a29.png)
-
-4. Run the `main.py` file
+4. Create a .env file for local or Github Secrets
+```sh
+EMAIL_ID = your_gmail_email_id@gmail.com
+EMAIL_PASSWORD = your_emails_password
+```
+5. Run the `main.py` file
 ```sh
 $ python main.py
 ```
