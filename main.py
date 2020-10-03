@@ -21,7 +21,7 @@ imap = imaplib.IMAP4_SSL("imap.gmail.com")
 # authenticate
 imap.login(username, password)
 
-status, messages = imap.select("INBOX")
+status, messages = imap.select("wakatime")
 
 # total number of emails
 messages = int(messages[0])
@@ -57,6 +57,7 @@ for i in range(messages, 0, -1):
                     if content_type == "text/plain" and "attachment" not in content_disposition:
                         # add text/plain emails and skip attachments
                         msgString += body
+                        
             else:
                 # extract content type of email
                 content_type = msg.get_content_type()
@@ -65,7 +66,7 @@ for i in range(messages, 0, -1):
                 if content_type == "text/plain":
                     # add only text email parts
                     msgString += body
-
+                    
             if content_type == "text/html":
                 subjectSplit = subject.split(" ")
                 datefrom = subjectSplit[-3]
