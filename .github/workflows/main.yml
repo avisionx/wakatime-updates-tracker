@@ -3,6 +3,7 @@ name: Generate WakaData from Email 🔥
 on:
   schedule:
     - cron: '0 0 */3 * *' # every 3 days in a month
+  workflow_dispatch:
 
 jobs:
   build:
