@@ -26,10 +26,11 @@ jobs:
       env: 
         EMAIL_ID: ${{ secrets.EMAIL_ID }}
         EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-    - name: Commit generated data ✨ 
+    - name: Add and Commit generated data ✨ 
       run: |
         git config --local user.email "avi.grg4567@gmail.com"
         git config --local user.name "avisionx"
+        git add data.json
         git commit -m "Update wakatime metrices 📊" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
