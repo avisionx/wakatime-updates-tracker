@@ -1,4 +1,4 @@
-name: Generate WakaData from Email 🔥
+name: Generate WakaData from Email
 
 on:
   schedule:
