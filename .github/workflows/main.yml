@@ -2,7 +2,7 @@ name: Generate WakaData from Email
 
 on:
   schedule:
-    - cron: '0 0 */3 * *' # every 3 days in a month
+    - cron: '0 0 * * WED' # every Wednesday since I recieve wakatime email every monday
   workflow_dispatch:
 
 jobs:
