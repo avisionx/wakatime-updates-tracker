@@ -1,14 +1,16 @@
-from dotenv import load_dotenv
-import imaplib
-import email
-from email.header import decode_header
 import os
 import re
 import json
+import imaplib
+import email
 
+from dotenv import load_dotenv
+from email.header import decode_header
+
+# load .env files
 load_dotenv()
 
-# Note enable allow less secure app settings in gmail
+# enable allow less secure app settings in gmail for this to work
 # account credentials
 username = os.getenv("EMAIL_ID")
 password = os.getenv("EMAIL_PASSWORD")
@@ -39,13 +41,8 @@ for i in range(messages, 0, -1):
                 # if it's a bytes, decode to str
                 subject = subject.decode()
 
-            # email sender
-            from_ = msg.get("From")
-            # print("Subject:", subject)
-            # print("From:", from_)
-            # if the email message is multipart
-
             msgString = ""
+
             if msg.is_multipart():
                 # iterate over email parts
                 for part in msg.walk():
@@ -58,56 +55,35 @@ for i in range(messages, 0, -1):
                     except:
                         pass
                     if content_type == "text/plain" and "attachment" not in content_disposition:
-                        # print text/plain emails and skip attachments
-                        # print(body)
+                        # add text/plain emails and skip attachments
                         msgString += body
-                    elif "attachment" in content_disposition:
-                        # download attachment
-                        filename = part.get_filename()
-                        if filename:
-                            folName = subject.split(" ")
-                            folName = folName[-3] + " " + \
-                                folName[-2] + " " + folName[-1]
-                            if not os.path.isdir(folName):
-                                # make a folder for this email (named after the subject)
-                                os.mkdir(folName)
-                            filepath = os.path.join(folName, filename)
-                            # download attachment and save it
-                            open(filepath, "wb").write(
-                                part.get_payload(decode=True))
             else:
                 # extract content type of email
                 content_type = msg.get_content_type()
                 # get the email body
                 body = msg.get_payload(decode=True).decode()
                 if content_type == "text/plain":
-                    # print only text email parts
-                    # print(body)
+                    # add only text email parts
                     msgString += body
+
             if content_type == "text/html":
-                folName = subject.split(" ")
-                datefrom = folName[-3]
-                dateto = folName[-1]
-                folName = folName[-3] + " " + folName[-2] + " " + folName[-1]
-                # if it's HTML, create a new HTML file and open it in browser
-                if not os.path.isdir(folName):
-                    # make a folder for this email (named after the subject)
-                    os.mkdir(folName)
-                filename = f"{folName[:50]}.html"
-                filepath = os.path.join(folName, filename)
-                # write the file
-                open(filepath, "w").write(body)
-                # open in the default browser
-                # webbrowser.open(filepath)
-            messageList.append(
-                {"data": msgString, "datefrom": datefrom, "dateto": dateto})
+                subjectSplit = subject.split(" ")
+                datefrom = subjectSplit[-3]
+                dateto = subjectSplit[-1]
+
+            messageList.append({
+                "data": msgString,
+                "datefrom": datefrom,
+                "dateto": dateto
+            })
+
 imap.close()
 imap.logout()
 
-monthReportRange = []
+monthReportList = []
 
 for i in range(13):
-    monthReportRange.append([])
+    monthReportList.append([])
 
 for i in range(len(messageList)):
     month = int(messageList[i]["dateto"].split("-")[1])
@@ -116,12 +92,12 @@ for i in range(len(messageList)):
     for msg in messageList[i]["data"].split("\n"):
         if msg:
             cleanedMsg.append(msg)
-    monthReportRange[month].append(cleanedMsg[6:])
+    monthReportList[month].append(cleanedMsg[6:])
 
 yearlyData = []
 
 for month in range(1, 13):
-    monthData = monthReportRange[month]
+    monthData = monthReportList[month]
     monthReport = {
         'totalTimeStr': "",
         'totalTime': {'hrs': 0,
