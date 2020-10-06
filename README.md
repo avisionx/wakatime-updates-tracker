@@ -70,6 +70,11 @@ EMAIL_PASSWORD = your_emails_password
 $ python main.py
 ```
 
+6. Can use Raw CDN from Github to host this like so
+```
+https://raw.githubusercontent.com/avisionx/wakatime-updates-tracker/master/data.json
+```
+
 <!-- ROADMAP -->
 ## Roadmap
 See the [open issues](https://github.com/avisionx/wakatime-updates-tracker/issues) for a list of proposed features (and known issues).
