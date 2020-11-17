@@ -1,11 +1,11 @@
+import email
+import imaplib
+import json
 import os
 import re
-import json
-import imaplib
-import email
+from email.header import decode_header
 
 from dotenv import load_dotenv
-from email.header import decode_header
 
 # load .env files
 load_dotenv()
@@ -57,7 +57,7 @@ for i in range(messages, 0, -1):
                     if content_type == "text/plain" and "attachment" not in content_disposition:
                         # add text/plain emails and skip attachments
                         msgString += body
-                        
+
             else:
                 # extract content type of email
                 content_type = msg.get_content_type()
@@ -66,7 +66,7 @@ for i in range(messages, 0, -1):
                 if content_type == "text/plain":
                     # add only text email parts
                     msgString += body
-                    
+
             if content_type == "text/html":
                 subjectSplit = subject.split(" ")
                 datefrom = subjectSplit[-3]
@@ -188,7 +188,10 @@ for month in range(1, 13):
             languagesMap[key] = tempObj
 
         weekHrs = weekHrs.split(" ")
-        totalMins += (int(weekHrs[0]) * 60 + int(weekHrs[2]))
+        try:
+            totalMins += (int(weekHrs[0]) * 60 + int(weekHrs[2]))
+        except:
+            totalMins += int(weekHrs[0])
         monthReport['totalMins'] = totalMins
         monthReport['totalTimeStr'] = "{hrs} hrs {mins} mins".format(
             hrs=totalMins//60, mins=totalMins % 60)
@@ -199,4 +202,4 @@ for month in range(1, 13):
     yearlyData.append(monthReport)
 
 with open('data.json', 'w') as outfile:
-    json.dump(yearlyData, outfile)
+    json.dump(yearlyData, outfile, indent=2)
