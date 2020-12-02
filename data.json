@@ -548,12 +548,12 @@
     }
   },
   {
-    "totalTimeStr": "39 hrs 13 mins",
+    "totalTimeStr": "39 hrs 39 mins",
     "totalTime": {
       "hrs": 39,
-      "mins": 13
+      "mins": 39
     },
-    "totalMins": 2353,
+    "totalMins": 2379,
     "projects": {
       "reactonite-project": {
         "totalTimeStr": "0 hrs 1 mins",
