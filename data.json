@@ -576,11 +576,175 @@
     }
   },
   {
-    "totalTimeStr": "",
+    "totalTimeStr": "17 hrs 42 mins",
     "totalTime": {
-      "hrs": 0,
-      "mins": 0
+      "hrs": 17,
+      "mins": 42
     },
-    "totalMins": 0
+    "totalMins": 1062,
+    "projects": {
+      "P_AVIGARG_2017223": {
+        "totalTimeStr": "6 hrs 21 mins",
+        "totalTime": {
+          "hrs": 6,
+          "mins": 21
+        },
+        "totalMins": 381
+      },
+      "reactonite": {
+        "totalTimeStr": "5 hrs 55 mins",
+        "totalTime": {
+          "hrs": 5,
+          "mins": 55
+        },
+        "totalMins": 355
+      },
+      "CRAMS": {
+        "totalTimeStr": "3 hrs 32 mins",
+        "totalTime": {
+          "hrs": 3,
+          "mins": 32
+        },
+        "totalMins": 212
+      },
+      "ndmc data": {
+        "totalTimeStr": "0 hrs 30 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 30
+        },
+        "totalMins": 30
+      },
+      "hello-world": {
+        "totalTimeStr": "0 hrs 27 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 27
+        },
+        "totalMins": 27
+      },
+      "IP": {
+        "totalTimeStr": "0 hrs 22 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 22
+        },
+        "totalMins": 22
+      },
+      "Unknown Project": {
+        "totalTimeStr": "0 hrs 11 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 11
+        },
+        "totalMins": 11
+      },
+      "githtml": {
+        "totalTimeStr": "0 hrs 10 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 10
+        },
+        "totalMins": 10
+      },
+      "dist": {
+        "totalTimeStr": "0 hrs 6 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 6
+        },
+        "totalMins": 6
+      },
+      "html": {
+        "totalTimeStr": "0 hrs 2 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 2
+        },
+        "totalMins": 2
+      }
+    },
+    "languages": {
+      "Python": {
+        "totalTimeStr": "13 hrs 49 mins",
+        "totalTime": {
+          "hrs": 13,
+          "mins": 49
+        },
+        "totalMins": 829
+      },
+      "JavaScript": {
+        "totalTimeStr": "1 hrs 32 mins",
+        "totalTime": {
+          "hrs": 1,
+          "mins": 32
+        },
+        "totalMins": 92
+      },
+      "HTML": {
+        "totalTimeStr": "1 hrs 8 mins",
+        "totalTime": {
+          "hrs": 1,
+          "mins": 8
+        },
+        "totalMins": 68
+      },
+      "Batchfile": {
+        "totalTimeStr": "0 hrs 15 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 15
+        },
+        "totalMins": 15
+      },
+      "reStructuredText": {
+        "totalTimeStr": "0 hrs 13 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 13
+        },
+        "totalMins": 13
+      },
+      "Text": {
+        "totalTimeStr": "0 hrs 13 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 13
+        },
+        "totalMins": 13
+      },
+      "YAML": {
+        "totalTimeStr": "0 hrs 10 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 10
+        },
+        "totalMins": 10
+      },
+      "JSON": {
+        "totalTimeStr": "0 hrs 10 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 10
+        },
+        "totalMins": 10
+      },
+      "Other": {
+        "totalTimeStr": "0 hrs 3 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 3
+        },
+        "totalMins": 3
+      },
+      "Markdown": {
+        "totalTimeStr": "0 hrs 2 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 2
+        },
+        "totalMins": 2
+      }
+    }
   }
 ]
