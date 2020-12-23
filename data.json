@@ -576,12 +576,12 @@
     }
   },
   {
-    "totalTimeStr": "17 hrs 42 mins",
+    "totalTimeStr": "57 hrs 43 mins",
     "totalTime": {
-      "hrs": 17,
-      "mins": 42
+      "hrs": 57,
+      "mins": 43
     },
-    "totalMins": 1062,
+    "totalMins": 3463,
     "projects": {
       "P_AVIGARG_2017223": {
         "totalTimeStr": "6 hrs 21 mins",
