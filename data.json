@@ -1,11 +1,39 @@
 [
   {
-    "totalTimeStr": "",
+    "totalTimeStr": "5 hrs 14 mins",
     "totalTime": {
-      "hrs": 0,
-      "mins": 0
+      "hrs": 5,
+      "mins": 14
     },
-    "totalMins": 0
+    "totalMins": 314,
+    "projects": {
+      "twitter": {
+        "totalTimeStr": "0 hrs 21 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 21
+        },
+        "totalMins": 21
+      }
+    },
+    "languages": {
+      "Other": {
+        "totalTimeStr": "0 hrs 11 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 11
+        },
+        "totalMins": 11
+      },
+      "Python": {
+        "totalTimeStr": "0 hrs 10 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 10
+        },
+        "totalMins": 10
+      }
+    }
   },
   {
     "totalTimeStr": "",
