@@ -36,12 +36,40 @@
     }
   },
   {
-    "totalTimeStr": "",
+    "totalTimeStr": "0 hrs 59 mins",
     "totalTime": {
       "hrs": 0,
-      "mins": 0
+      "mins": 59
     },
-    "totalMins": 0
+    "totalMins": 59,
+    "projects": {
+      "djb": {
+        "totalTimeStr": "0 hrs 59 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 59
+        },
+        "totalMins": 59
+      }
+    },
+    "languages": {
+      "HTML": {
+        "totalTimeStr": "0 hrs 51 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 51
+        },
+        "totalMins": 51
+      },
+      "PHP": {
+        "totalTimeStr": "0 hrs 7 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 7
+        },
+        "totalMins": 7
+      }
+    }
   },
   {
     "totalTimeStr": "",
