@@ -36,12 +36,12 @@
     }
   },
   {
-    "totalTimeStr": "0 hrs 59 mins",
+    "totalTimeStr": "7 hrs 3 mins",
     "totalTime": {
-      "hrs": 0,
-      "mins": 59
+      "hrs": 7,
+      "mins": 3
     },
-    "totalMins": 59,
+    "totalMins": 423,
     "projects": {
       "djb": {
         "totalTimeStr": "0 hrs 59 mins",
