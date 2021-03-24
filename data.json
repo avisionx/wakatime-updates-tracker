@@ -36,12 +36,12 @@
     }
   },
   {
-    "totalTimeStr": "7 hrs 3 mins",
+    "totalTimeStr": "17 hrs 31 mins",
     "totalTime": {
-      "hrs": 7,
-      "mins": 3
+      "hrs": 17,
+      "mins": 31
     },
-    "totalMins": 423,
+    "totalMins": 1051,
     "projects": {
       "djb": {
         "totalTimeStr": "0 hrs 59 mins",
@@ -72,12 +72,120 @@
     }
   },
   {
-    "totalTimeStr": "",
+    "totalTimeStr": "25 hrs 25 mins",
     "totalTime": {
-      "hrs": 0,
-      "mins": 0
+      "hrs": 25,
+      "mins": 25
     },
-    "totalMins": 0
+    "totalMins": 1525,
+    "projects": {
+      "fms-iiitd": {
+        "totalTimeStr": "20 hrs 6 mins",
+        "totalTime": {
+          "hrs": 20,
+          "mins": 6
+        },
+        "totalMins": 1206
+      },
+      "OSA IIITD": {
+        "totalTimeStr": "0 hrs 59 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 59
+        },
+        "totalMins": 59
+      },
+      "New folder": {
+        "totalTimeStr": "0 hrs 38 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 38
+        },
+        "totalMins": 38
+      },
+      "arham-alloy": {
+        "totalTimeStr": "0 hrs 37 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 37
+        },
+        "totalMins": 37
+      },
+      "CRAMS": {
+        "totalTimeStr": "0 hrs 29 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 29
+        },
+        "totalMins": 29
+      }
+    },
+    "languages": {
+      "HTML": {
+        "totalTimeStr": "11 hrs 16 mins",
+        "totalTime": {
+          "hrs": 11,
+          "mins": 16
+        },
+        "totalMins": 676
+      },
+      "Python": {
+        "totalTimeStr": "9 hrs 31 mins",
+        "totalTime": {
+          "hrs": 9,
+          "mins": 31
+        },
+        "totalMins": 571
+      },
+      "JavaScript": {
+        "totalTimeStr": "1 hrs 26 mins",
+        "totalTime": {
+          "hrs": 1,
+          "mins": 26
+        },
+        "totalMins": 86
+      },
+      "Other": {
+        "totalTimeStr": "0 hrs 15 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 15
+        },
+        "totalMins": 15
+      },
+      "CSS": {
+        "totalTimeStr": "0 hrs 14 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 14
+        },
+        "totalMins": 14
+      },
+      "SCSS": {
+        "totalTimeStr": "0 hrs 3 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 3
+        },
+        "totalMins": 3
+      },
+      "Markdown": {
+        "totalTimeStr": "0 hrs 3 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 3
+        },
+        "totalMins": 3
+      },
+      "JSON": {
+        "totalTimeStr": "0 hrs 2 mins",
+        "totalTime": {
+          "hrs": 0,
+          "mins": 2
+        },
+        "totalMins": 2
+      }
+    }
   },
   {
     "totalTimeStr": "",
